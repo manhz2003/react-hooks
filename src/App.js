@@ -1,25 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+// muốn chạy bài nào lên hãy sửa lại đường dẫn của bài đó vào file index.js
+// import App from './App'; (đây là nguyên gốc của dự án)
+// ví dụ muốn chạy bài trong useState thì sửa lại link thành: import App from './useState/App1';
