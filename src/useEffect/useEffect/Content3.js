@@ -1,22 +1,9 @@
-// các trường hợp
-
-// useEffect(callback)
-// - gọi callback mỗi khi component re-render
-// - gọi callback sau khi thêm element vào DOM
-
-// useEffect(callback, [])
-// - chỉ gọi callback 1 lần sau khi component mounted.
-
-// useEffect(callback, [deps])
-// - callback sẽ được gọi lại mỗi khi des thay đổi.
-
-// Lý thuyết chung
-// 1. callback luôn được gọi sau khi component mounted.
-
 import { useEffect, useState } from "react";
 
-// trường hợp 3 useEffect(callback, [deps])
 // tạo ra 1 tab gồm 3 nút khi bấm vào nút nào sẽ call api tương ứng với nút đó.
+
+// 3. useEffect(callback, [deps])
+// -  gọi callback của useEffect mỗi khi deps thay đổi.
 
 const tabs = ["posts", "comments", "albums"];
 
@@ -33,6 +20,7 @@ function Content3() {
       .then((pos) => setPost(pos));
 
     // ta truyền gì vào thì nó sẽ là des ở đây des là type.
+    // mỗi khi des thay đổi thì callback sẽ được gọi lại 1 lần.
   }, [type]);
 
   return (

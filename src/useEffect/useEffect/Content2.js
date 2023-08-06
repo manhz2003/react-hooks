@@ -1,21 +1,9 @@
-// các trường hợp
-
-// useEffect(callback)
-// - gọi callback mỗi khi component re-render
-// - gọi callback sau khi thêm element vào DOM
-
-// useEffect(callback, [])
-// - chỉ gọi callback 1 lần sau khi component mounted.
-
-// useEffect(callback, [deps])
-
-// Lý thuyết chung
-// 1. callback luôn được gọi sau khi component mounted.
-
 import { useEffect, useState } from "react";
 
-// trường hợp 2 useEffect(callback, [])
-// ví dụ thực hiện call API hiển thị title của post.
+// call API hiển thị title của post.
+
+// 2. useEffect(callback, [])
+// -  chỉ gọi callback của useEffect 1 lần sau khi component mounted.
 
 function Content2() {
   const [title, setTitle] = useState("");
