@@ -19,7 +19,9 @@
 // -  gọi callback của useEffect mỗi khi deps thay đổi.
 
 // * Lý thuyết chung của 3 trường hợp.
-//   callback của useEffect được gọi lại mỗi khi component mounted.
+//   + callback của useEffect được gọi lại mỗi khi component mounted.
+//   + clearn upfunction luôn được gọi trước khi component unmount.
+//   + clearn upfunction luôn được gọi trước khi callback được gọi.
 
 import { useState } from "react";
 
